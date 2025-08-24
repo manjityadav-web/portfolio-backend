@@ -12,7 +12,13 @@ const app = express()
 
 app.use(express.json());
 app.use(fileUpload());
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'https://portfolio-frontend-ljxy.vercel.app/',
+
+    credentials: true
+  }
+));
 
 dbConnect();
 app.use('/img',express.static('uploads'))
