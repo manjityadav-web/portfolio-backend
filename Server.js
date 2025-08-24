@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(fileUpload());
 app.use(cors(
   {
-    origin: 'https://portfolio-frontend-ljxy.vercel.app/',
+    origin: 'https://portfolio-frontend-ljxy.vercel.app',
 
     credentials: true
   }
