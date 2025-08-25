@@ -43,7 +43,7 @@ try{
             if (err) {
                 res.json({
                     code: 400,
-                    message: "err.message",
+                    message: err.message,
                     data: ''
                 })
             }
