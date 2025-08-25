@@ -43,7 +43,7 @@ try{
             if (err) {
                 res.json({
                     code: 400,
-                    message: "Error in File Upload.",
+                    message: "err.message",
                     data: ''
                 })
             }
