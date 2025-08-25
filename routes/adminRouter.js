@@ -39,7 +39,7 @@ try{
  
 
             const { pic } = req.files;
-        pic.mv("uploads/" + pic?.name, (err) => {
+        pic.mv("Uploads/" + pic?.name, (err) => {
             if (err) {
                 res.json({
                     code: 400,
